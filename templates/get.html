@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form action="/insert" method="post">
+      <div>
+        <label for="a">번호</label>
+        <input type="text" name="num" value="{{result[0]}}" id="a" />
+      </div>
+      <div>
+        <label for="b">제목</label>
+        <input type="text" name="title" value="{{result[1]}}" id="b" />
+      </div>
+      <div>
+        <label for="c">글쓴이</label>
+        <input type="text" name=" writer" value="{{result[2]}}" id="c" />
+      </div>
+      <div>
+        <label for="d">조회수</label>
+        <input type="text" name=" views" value="{{result[3]}}" id="d" />
+      </div>
+      <div>
+        <label for="f">내용</label>
+        <input type="text" name=" context" value="{{result[4]}}" id="f" />
+      </div>
+      <input type="submit" value="등록" />
+    </form>
+  </body>
+</html>
